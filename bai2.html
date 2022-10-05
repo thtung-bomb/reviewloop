@@ -8,7 +8,7 @@
 </head>
 <body>
     <script>
-        let tem = +prompt("Nhập nhiệt độ hiện tại của bạn");
+        /*let tem = +prompt("Nhập nhiệt độ hiện tại của bạn");
 
         if(tem > 100)
         {
@@ -17,7 +17,16 @@
         if(tem < 20)
         {
             alert("Hãy tăng nhiệt độ phòng bạn");
+        }*/
+        
+        let tem = +prompt("Hãy nhập vào nhiệt độ phòng bạn");
+
+        while(tem < 20 || tem > 100)
+        {
+            tem = +prompt("Hãy nhập vào nhiệt độ phòng bạn");
         }
+        alert("Nhiệt độ phòng bạn bình thường");
+        
     </script>
 </body>
 </html>
